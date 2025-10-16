@@ -1,0 +1,251 @@
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Heebo', sans-serif;
+  background-color: #f9f9fb;
+  color: #2c2c2c;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+/* Container */
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Top Banner */
+.top-banner {
+  background: linear-gradient(90deg, #0033a0, #d71920);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.top-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.top-banner p {
+  font-size: 1.2rem;
+}
+
+.top-banner strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0033a0, #d71920);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  font-weight: 800;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero a.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: white;
+  color: #d71920;
+  font-weight: 900;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.hero a.cta-button:hover {
+  background: #f0f0f0;
+}
+
+/* Info Box */
+.hero .info-box {
+  background: none;
+  color: white;
+  padding: 30px;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Benefits Section */
+.benefits {
+  background: #fff;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #d71920;
+}
+
+.benefits h3 {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.benefit-card {
+  background: #f0f0f8;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.icon-circle {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Steps Section */
+.steps-section {
+  background: #f9f9fb;
+  text-align: center;
+}
+
+.steps-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #d71920;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.step-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.step-icon {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #d71920;
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Apply Section */
+.apply-section {
+  background: #fff;
+  text-align: center;
+}
+
+.apply-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.apply-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #d71920;
+}
+
+.cta-button,
+.submit-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #d71920;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover,
+.submit-btn:hover {
+  background: #a31217;
+}
+
+/* FAQ Section */
+#faq-section {
+  background: none;
+  border: none;
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#faq-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #000;
+  text-align: center;
+}
+
+.faq-question {
+  font-weight: bold;
+  margin: 20px 0 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.faq-answer {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #000;
+  display: none;
+}
+
+.faq-question.open + .faq-answer {
+  display: block;
+}
+
+/* Footer */
+footer {
+  background: #0033a0;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>BDO - דף נחיתה</title>
+  <link href="style.css" rel="stylesheet"/>
+  <style>
+    .faq-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s;
+    }
+    .faq-question:hover {
+      color: #0078d4;
+    }
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    .arrow {
+      margin-left: 10px;
+      transition: transform 0.3s;
+    }
+    .faq-question.open .arrow {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+  <!-- באנר עליון -->
+  <section class="top-banner">
+    <div class="top-banner-content">
+      <h1>הגיע הזמן לקחת את העתיד שלכם בחשבון!</h1>
+      <p>תהליכי המיון לפירמת BDO בעיצומם</p>
+      <strong>מועדי גיוס 2026 ו-2027</strong>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>מובילים את העתיד הפיננסי שלך</h1>
+      <a class="cta-button" href="https://www.bdo.co.il" target="_blank">
+        <span>גלה את השירותים שלנו &larr;</span>
+      </a>
+      <div class="info-box">
+מתלבט לגבי ההתמחות שלך? אנחנו כאן בשבילך.
+אם הגעת לכאן, כנראה שאת.ה שוקל.ת את הצעד הראשון בקריירה שלך בתחום ראיית החשבון ואנחנו ב BDO מזמינים אותך לעשות אותו איתנו.
+יצרנו עבורך מרחב שמרכז את כל המידע שחשוב לדעת על תהליך ההתמחות,
+בצורה מסודרת, ברורה וללא הפתעות.
+המטרה שלנו? לעזור לך להבין את הדרך, להרגיש בטוח, ולהתמקד במה שחשוב באמת:
+להיות את.ה, ולהביא את עצמך לידי ביטוי.
+      </div>
+    </div>
+    <div class="particles" id="particles"></div>
+  </section>
+
+  <!-- יתרונות -->
+  <section class="benefits">
+    <h2>למה לבחור ב-BDO?</h2>
+    <h3>יש לך את כל הסיבות להתמחות אצלנו!</h3>
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <div class="icon-circle">💼</div>
+        <h3>תהליך חניכה מסודר</h3>
+        <p>לכל מתמחה מוצמד "חונך" שמלווה אותו מקצועית ואישית</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon-circle">📊</div>
+        <h3>עתודה ניהולית</h3>
+        <p>עובדים אשר מיועדים למסלול ניהול , מקבלים הכשרה ופיתוח אישי בעתודה ניהולית ייעודית</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon-circle">👥</div>
+        <h3>הכנה לבחינות מועצה</h3>
+        <p>גמישות בתקופת הלימודים והבחינות</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon-circle">📈</div>
+        <h3>תחומי התמחות מגוונים</h3>
+        <p>אפשרות להתמחות מול מגוון תיקים ולקוחות</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon-circle">📈</div>
+        <h3>אפשרויות ניוד</h3>
+        <p>חשיפה ללקוחות ותחומים שונים ומגוונים, במטרה להרחיב את הידע ולייצר עניין בתפקיד</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- שלבי תהליך הגיוס -->
+  <section class="steps-section">
+    <h2>שלבי תהליך הגיוס</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-icon">1</div>
+        <h3>העברת מסמכים</h3>
+        <p>שליחת קורות חיים, אישור 2/3 וגיליון ציונים.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">2</div>
+        <h3>מבדק פסיכוטכני ממוחשב</h3>
+        <p>המבחן אורך כשעתיים וחצי, כולל שאלות חשיבה ואישיות, מתבצע מקוון עם מצלמה ומיקרופון.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">3</div>
+        <h3>ראיון גיוס</h3>
+        <p>ראיון ראשוני מול רכזת גיוס ב-TEAMS, אורך כ-30 דקות לבחינת התאמה לצוותים.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">4</div>
+        <h3>פגישה עם מנהל/שותף</h3>
+        <p>פגישה עם שותף בצוות, הזדמנות להיכרות הדדית ולעיתים משימה מקצועית קצרה.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">5</div>
+        <h3>הצעת שכר וחתימת חוזה</h3>
+        <p>עברתם את כל השלבים? נתקדם להצעת שכר וחתימה על חוזה – השלב שבו הכל מתחיל לקרות.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- הגשת מועמדות -->
+  <section class="apply-section">
+    <div class="apply-container">
+      <h2>מוכן להגיש מועמדות?</h2>
+      <a class="cta-button" href="https://careers.bdo.co.il" target="_blank">הגש מועמדות</a>
+      <button class="submit-btn" type="submit">העלאת אישור 2/3 וגיליון ציונים</button>
+    </div>
+  </section>
+
+  <!-- שאלות נפוצות -->
+  <section id="faq-section">
+    <h2>שאלות נפוצות</h2>
+
+    <div class="faq-item">
+      <div class="faq-question"><span class="arrow">▶</span> מהו משך התהליך?</div>
+      <div class="faq-answer">תיאום המבדק הפסיכוטכני יתבצע למול לוחות זמנים אישיים של המועמדים...</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><span class="arrow">▶</span> אם לא עברתי ראיון שותף?</div>
+      <div class="faq-answer">זה ממש לא סוף הדרך. לפעמים זה פשוט עניין של התאמה...</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><span class="arrow">▶</span> מה רמת האנגלית הנדרשת להתמחות בפירמה?</div>
+      <div class="faq-answer">במהלך המבדקים הפסיכוטכניים נבחנת גם רמת האנגלית שלכם...</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><span class="arrow">▶</span> האם אפשר להשתלב במשרת סטודנט?</div>
+      <div class="faq-answer">כן! ניתן להשתלב במשרת סטודנט, בתנאי שמתחייבים ללפחות 3 ימים מלאים בשבוע...</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"><span class="arrow">▶</span> מה שואלים בריאיון הגיוס?</div>
+      <div class="faq-answer">בריאיון איתנו, צוות הגיוס, נרצה להכיר אתכם יותר...</div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('open');
+        const answer = question.nextElementSibling;
+        const arrow = question.querySelector('.arrow');
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 כל הזכויות שמורות ל-BDO ישראל</p>
+  </footer>
+</body>
+</html>
