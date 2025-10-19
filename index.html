@@ -1,40 +1,11 @@
-
 <!DOCTYPE html>
 <html dir="rtl" lang="he">
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>BDO - דף נחיתה</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet"/>
-  <style>
-    .faq-item {
-      margin-bottom: 15px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-    }
-    .faq-question {
-      cursor: pointer;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      transition: color 0.3s;
-    }
-    .faq-question:hover {
-      color: #0078d4;
-    }
-    .faq-answer {
-      display: none;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-    .arrow {
-      margin-left: 10px;
-      transition: transform 0.3s;
-    }
-    .faq-question.open .arrow {
-      transform: rotate(90deg);
-    }
-  </style>
 </head>
 <body>
   <!-- באנר עליון -->
@@ -49,20 +20,18 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>מובילים את העתיד הפיננסי שלך</h1>
-      <a class="cta-button" href="https://www.bdo.co.il" target="_blank">
-        <span>גלה את השירותים שלנו &larr;</span>
-      </a>
+      <h1>מתלבט לגבי ההתמחות שלך? אנחנו כאן בשבילך.</h1>
+      <!-- <a class="cta-button" href="https://www.bdo.co.il" target="_blank">
+        <span>גלה את השירותים שלנו ←</span>
+      </a> -->
       <div class="info-box">
-מתלבט לגבי ההתמחות שלך? אנחנו כאן בשבילך.
-אם הגעת לכאן, כנראה שאת.ה שוקל.ת את הצעד הראשון בקריירה שלך בתחום ראיית החשבון ואנחנו ב BDO מזמינים אותך לעשות אותו איתנו.
-יצרנו עבורך מרחב שמרכז את כל המידע שחשוב לדעת על תהליך ההתמחות,
-בצורה מסודרת, ברורה וללא הפתעות.
-המטרה שלנו? לעזור לך להבין את הדרך, להרגיש בטוח, ולהתמקד במה שחשוב באמת:
-להיות את.ה, ולהביא את עצמך לידי ביטוי.
-      </div>
+        אם הגעת לכאן, כנראה שאת.ה שוקל.ת את הצעד הראשון בקריירה שלך בתחום ראיית החשבון ואנחנו ב BDO מזמינים אותך לעשות אותו איתנו.
+        יצרנו עבורך מרחב שמרכז את כל המידע שחשוב לדעת על תהליך ההתמחות,
+        בצורה מסודרת, ברורה וללא הפתעות.
+        המטרה שלנו? לעזור לך להבין את הדרך, להרגיש בטוח, ולהתמקד במה שחשוב באמת:
+        <strong>להיות את.ה, ולהביא את עצמך לידי ביטוי.</strong>
+        </div>
     </div>
-    <div class="particles" id="particles"></div>
   </section>
 
   <!-- יתרונות -->
@@ -91,7 +60,7 @@
         <p>אפשרות להתמחות מול מגוון תיקים ולקוחות</p>
       </div>
       <div class="benefit-card">
-        <div class="icon-circle">📈</div>
+        <div class="icon-circle">🔄</div>
         <h3>אפשרויות ניוד</h3>
         <p>חשיפה ללקוחות ותחומים שונים ומגוונים, במטרה להרחיב את הידע ולייצר עניין בתפקיד</p>
       </div>
@@ -110,22 +79,23 @@
       <div class="step-card">
         <div class="step-icon">2</div>
         <h3>מבדק פסיכוטכני ממוחשב</h3>
-        <p>המבחן אורך כשעתיים וחצי, כולל שאלות חשיבה ואישיות, מתבצע מקוון עם מצלמה ומיקרופון.</p>
+        <p> אורך המבחן הוא בין שעתיים לשעתיים וחצי (ניתן לבקש תוספת זמן במידה וקיימת זכאות). המבדק מחולק לשני חלקים: 1. בוחן כישורי חשיבה 2. בוחן פרמטרים נבחרים באישיות וכולל גם שאלות בע״פ. המבחן מתבצע באופן מקוון מול מצלמה ועם מיקרופון פתוח.</p>
       </div>
       <div class="step-card">
         <div class="step-icon">3</div>
         <h3>ראיון גיוס</h3>
-        <p>ראיון ראשוני מול רכזת גיוס ב-TEAMS, אורך כ-30 דקות לבחינת התאמה לצוותים.</p>
+        <p>ראיון ראשוני אישיותי מול רכזת גיוס, אורך כ-30 דקות ומתבצע ב-Teams באופן מקוון. במהלכו בוחנים התאמה לצוותים השונים.</p>
       </div>
       <div class="step-card">
         <div class="step-icon">4</div>
         <h3>פגישה עם מנהל/שותף</h3>
-        <p>פגישה עם שותף בצוות, הזדמנות להיכרות הדדית ולעיתים משימה מקצועית קצרה.</p>
+        <p>בשלב הזה תיפשגו עם אחד השותפים בצוות שאליו שובצתם. זו הזדמנות להכיר את מי שילווה אתכם בהתמחות, לשאול שאלות, להבין את הכוון - ולוודא שיש התאמה הדדית לפני שממשיכים יחד. לעיתים תתקיים משימה/ מטלה מקצועית קצרה על מנת לבחן התאמה לאחר שלה זה.</p>
       </div>
       <div class="step-card">
         <div class="step-icon">5</div>
         <h3>הצעת שכר וחתימת חוזה</h3>
-        <p>עברתם את כל השלבים? נתקדם להצעת שכר וחתימה על חוזה – השלב שבו הכל מתחיל לקרות.</p>
+        <p>עברתם את כל השלבים? איזה כיף - עכשיו מגיעים לחלק המרגש!
+            אם הכל עבר בהצלחה, נתקדם איתכם להצעת שכר, וכשיהיה סיכום - נעבור לחתימה על חוזה. זה השלב שבו הדברים באמת מתחילים לקרות :)</p>
       </div>
     </div>
   </section>
@@ -134,8 +104,9 @@
   <section class="apply-section">
     <div class="apply-container">
       <h2>מוכן להגיש מועמדות?</h2>
-      <a class="cta-button" href="https://careers.bdo.co.il" target="_blank">הגש מועמדות</a>
-      <button class="submit-btn" type="submit">העלאת אישור 2/3 וגיליון ציונים</button>
+      <a class="cta-button" href="https://www.bdo.co.il" target="_blank">
+        <span>לאתר קריירה שלנו←</span>
+      </a> 
     </div>
   </section>
 
@@ -145,43 +116,42 @@
 
     <div class="faq-item">
       <div class="faq-question"><span class="arrow">▶</span> מהו משך התהליך?</div>
-      <div class="faq-answer">תיאום המבדק הפסיכוטכני יתבצע למול לוחות זמנים אישיים של המועמדים...</div>
+      <div class="faq-answer">תיאום המבדק הפסיכוטכני יתבצע למול לוחות זמנים אישיים של המועמדים. התהליך כולו נמשך בדרך כלל מספר שבועות, תלוי בזמינות ובקצב התקדמות המועמד בין השלבים השונים.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-question"><span class="arrow">▶</span> אם לא עברתי ראיון שותף?</div>
-      <div class="faq-answer">זה ממש לא סוף הדרך. לפעמים זה פשוט עניין של התאמה...</div>
+      <div class="faq-answer">זה ממש לא סוף הדרך. לפעמים זה פשוט עניין של התאמה לצוות או לתחום מסוים. אנחנו שומרים על קשר עם מועמדים איכותיים ועשויים לחזור אליך בהזדמנויות עתידיות או לצוותים אחרים.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-question"><span class="arrow">▶</span> מה רמת האנגלית הנדרשת להתמחות בפירמה?</div>
-      <div class="faq-answer">במהלך המבדקים הפסיכוטכניים נבחנת גם רמת האנגלית שלכם...</div>
+      <div class="faq-answer">במהלך המבדקים הפסיכוטכניים נבחנת גם רמת האנגלית שלכם. אנחנו מחפשים רמה טובה של אנגלית, במיוחד קריאה והבנה, כיוון שחלק מהלקוחות והמסמכים הם בינלאומיים.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-question"><span class="arrow">▶</span> האם אפשר להשתלב במשרת סטודנט?</div>
-      <div class="faq-answer">כן! ניתן להשתלב במשרת סטודנט, בתנאי שמתחייבים ללפחות 3 ימים מלאים בשבוע...</div>
+      <div class="faq-answer">כן! ניתן להשתלב במשרת סטודנט, בתנאי שמתחייבים ללפחות 3 ימים מלאים בשבוע. זו הזדמנות מצוינת להכיר את הפירמה ולצבור ניסיון עוד לפני תחילת ההתמחות הרשמית.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question"><span class="arrow">▶</span> מה שואלים בריאיון הגיוס?</div>
-      <div class="faq-answer">בריאיון איתנו, צוות הגיוס, נרצה להכיר אתכם יותר...</div>
+      <div class="faq-question"><span class="arrow">▶</span> מה שואלים בראיון הגיוס?</div>
+      <div class="faq-answer">בראיון איתנו, צוות הגיוס, נרצה להכיר אתכם יותר - מה מניע אתכם, מה הציפיות שלכם, איך אתם רואים את עצמכם בעתיד. זה גם הזדמנות עבורכם לשאול שאלות ולהבין אם BDO מתאימה לכם.</div>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 כל הזכויות שמורות ל-BDO ישראל</p>
+  </footer>
 
   <script>
     document.querySelectorAll('.faq-question').forEach(question => {
       question.addEventListener('click', () => {
         question.classList.toggle('open');
         const answer = question.nextElementSibling;
-        const arrow = question.querySelector('.arrow');
         answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
       });
     });
   </script>
-
-  <footer>
-    <p>&copy; 2025 כל הזכויות שמורות ל-BDO ישראל</p>
-  </footer>
 </body>
 </html>
