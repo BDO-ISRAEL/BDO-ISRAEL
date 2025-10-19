@@ -182,99 +182,126 @@
     letter-spacing: 0.2px;
   }
   
-  /* Benefits Section */
   .benefits {
-    padding: 100px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .benefits h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 800;
-    margin-bottom: 15px;
-    color: #d71920;
-    text-shadow: 0 0 30px rgba(215,25,32,0.3);
-    font-family: 'Heebo', sans-serif;
-    letter-spacing: -0.5px;
-  }
-  
-  .benefits h3 {
-    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-    margin-bottom: 60px;
-    color: #ffffff;
-    opacity: 0.8;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-  }
-  
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #d71920;
+  font-family: 'Heebo', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.benefits h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  margin-bottom: 60px;
+  color: #ffffff;
+  opacity: 0.8;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.benefit-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.08) 100%);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 45px 35px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0033a0, #d71920);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(215,25,32,0.4);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, rgba(0,51,160,0.1), rgba(215,25,32,0.1));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .icon-wrapper {
+  background: linear-gradient(135deg, rgba(0,51,160,0.2), rgba(215,25,32,0.2));
+  transform: scale(1.05);
+}
+
+.benefit-icon {
+  width: 36px;
+  height: 36px;
+  color: #d71920;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  color: #ff2030;
+  transform: scale(1.1);
+}
+
+.benefit-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-family: 'Assistant', sans-serif;
+  opacity: 1;
+}
+
+.benefit-card p {
+  color: rgba(255,255,255,0.75);
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    grid-template-columns: 1fr;
   }
   
-  .benefit-card {
-    background: linear-gradient(135deg, rgba(0,51,160,0.1), rgba(215,25,32,0.1));
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 40px;
-    border-radius: 25px;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
+  .benefits {
+    padding: 60px 20px;
   }
-  
-  .benefit-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(0,51,160,0.2), rgba(215,25,32,0.2));
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-  
-  .benefit-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(215,25,32,0.4);
-  }
-  
-  .benefit-card:hover::before {
-    opacity: 1;
-  }
-  
-  .icon-circle {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 20px rgba(215,25,32,0.5));
-    position: relative;
-    z-index: 1;
-  }
-  
-  .benefit-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: #ffffff;
-    position: relative;
-    z-index: 1;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-    font-family: 'Assistant', sans-serif;
-  }
-  
-  .benefit-card p {
-    color: rgba(255,255,255,0.8);
-    position: relative;
-    z-index: 1;
-    font-weight: 300;
-    line-height: 1.7;
-    font-size: 1.05rem;
-  }
+}
   
   /* Steps Section */
   .steps-section {
@@ -310,12 +337,12 @@
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.1);
-    padding: 40px;
+    padding: 50px 30px;
     border-radius: 50%;
     transition: all 0.4s ease;
     position: relative;
-    width: 280px;
-    height: 280px;
+    width: 350px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,8 +379,8 @@
   }
   
   .step-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 12px;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
     margin-top: 35px;
     color: #ffffff;
     font-weight: 700;
@@ -363,8 +390,8 @@
   
   .step-card p {
     color: rgba(255,255,255,0.7);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.5;
     font-weight: 300;
   }
   
@@ -507,13 +534,22 @@
     }
     
     .steps-grid {
-      gap: 80px;
+      gap: 100px;
     }
     
     .step-card {
-      width: 260px;
-      height: 260px;
-      padding: 35px;
+      width: 320px;
+      height: 320px;
+      padding: 45px 25px;
+    }
+    
+    .step-card h3 {
+      font-size: 1.15rem;
+    }
+    
+    .step-card p {
+      font-size: 0.9rem;
+      line-height: 1.4;
     }
     
     .hero {
@@ -522,5 +558,49 @@
     
     .info-box {
       padding: 30px 20px;
+    }
+    
+    .top-banner {
+      padding: 30px 15px;
+    }
+    
+    .benefits {
+      padding: 60px 20px;
+    }
+    
+    .steps-section {
+      padding: 60px 20px;
+    }
+    
+    .apply-section {
+      padding: 60px 20px;
+    }
+    
+    #faq-section {
+      padding: 60px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .step-card {
+      width: 280px;
+      height: 280px;
+      padding: 40px 20px;
+    }
+    
+    .step-card h3 {
+      font-size: 1.05rem;
+      margin-top: 30px;
+    }
+    
+    .step-card p {
+      font-size: 0.85rem;
+    }
+    
+    .step-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 2rem;
+      top: -25px;
     }
   }
