@@ -750,3 +750,13 @@ footer {
     left: -5px;
   }
 }
+
+/* ===================================
+   Fix FAQ Arrow Color on Mobile
+   =================================== */
+@media (max-width: 768px) {
+  /* Make FAQ arrows red on mobile */
+  .arrow {
+    color: #d71920 !important;
+  }
+}
