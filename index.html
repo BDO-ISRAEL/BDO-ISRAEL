@@ -68,10 +68,8 @@
       <div class="benefit-card">
         <div class="icon-wrapper">
           <svg class="icon-svg" viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
           </svg>
         </div>
         <h3>הכנה לבחינות מועצה</h3>
@@ -82,8 +80,9 @@
       <div class="benefit-card">
         <div class="icon-wrapper">
           <svg class="icon-svg" viewBox="0 0 24 24">
-            <line x1="12" y1="1" x2="12" y2="23"/>
-            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
           </svg>
         </div>
         <h3>תחומי התמחות מגוונים</h3>
@@ -94,8 +93,9 @@
       <div class="benefit-card">
         <div class="icon-wrapper">
           <svg class="icon-svg" viewBox="0 0 24 24">
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-            <polyline points="17 6 23 6 23 12"/>
+            <path d="M21.5 2v6h-6"/>
+            <path d="M21 2l-7.5 7.5"/>
+            <path d="M16 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"/>
           </svg>
         </div>
         <h3>אפשרויות ניוד</h3>
@@ -108,7 +108,8 @@
   <section class="steps-section">
     <h2>שלבי תהליך הגיוס</h2>
     
-    <div class="steps-wrapper">
+    <!-- Desktop Version -->
+    <div class="steps-wrapper desktop-version">
       <!-- Steps Container with Circles -->
       <div class="steps-container">
         <div class="connecting-line"></div>
@@ -183,6 +184,89 @@
         <div class="step-details" data-content="5">
           <p>עברתם את כל השלבים? איזה כיף! עכשיו מגיעים לחלק המרגש — אם הכל עבר בהצלחה, נתקדם איתכם להצעת שכר, וכשיהיה סיכום — נעבור לחתימה על חוזה. זה השלב שבו הדברים באמת מתחילים לקרות :)</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Mobile Carousel -->
+    <div class="mobile-carousel">
+      <div class="carousel-wrapper">
+        <button class="carousel-arrow prev-arrow" onclick="changeSlide(-1)">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <polyline points="15 18 9 12 15 6" stroke="currentColor" fill="none" stroke-width="3"/>
+          </svg>
+        </button>
+        
+        <div class="carousel-content">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active">
+            <div class="step-circle-mobile">
+              <div class="step-number-mobile">1</div>
+            </div>
+            <h3 class="step-title-mobile">העברת מסמכים</h3>
+            <div class="step-details-mobile">
+              <p>יש להעלות את קו"ח לאתר ולהגיש מועמדות ולאחר מכן צוות מחלקת הגיוס יצור איתכם קשר לקבלת אישור 2/3 וגיליון ציונים.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="step-circle-mobile">
+              <div class="step-number-mobile">2</div>
+            </div>
+            <h3 class="step-title-mobile">מבדק פסיכוטכני ממוחשב</h3>
+            <div class="step-details-mobile">
+              <p>אורך המבחן הוא בין שעתיים לשעתיים וחצי (ניתן לבקש תוספת זמן במידה וקיימת זכאות). המבדק מחולק לשני חלקים: 1. בוחן כישורי חשיבה 2. בוחן פרמטרים נבחרים באישיות וכולל גם שאלות בע״פ. המבחן מתבצע באופן מקוון מול מצלמה ועם מיקרופון פתוח.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="step-circle-mobile">
+              <div class="step-number-mobile">3</div>
+            </div>
+            <h3 class="step-title-mobile">ראיון גיוס</h3>
+            <div class="step-details-mobile">
+              <p>ראיון ראשוני אישיותי מול רכזת גיוס, אורך כ-30 דקות ומתבצע ב-Teams באופן מקוון. במהלכו בוחנים התאמה לצוותים השונים.</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-slide">
+            <div class="step-circle-mobile">
+              <div class="step-number-mobile">4</div>
+            </div>
+            <h3 class="step-title-mobile">פגישה עם מנהל/שותף</h3>
+            <div class="step-details-mobile">
+              <p>בשלב הזה תפגשו עם אחד השותפים בצוות שאליו שובצתם. זו הזדמנות להכיר את מי שילווה אתכם בהתמחות, לשאול שאלות, להבין את הכיוון - ולוודא שיש התאמה הדדית לפני שממשיכים יחד. לעיתים תתקיים משימה או מטלה מקצועית קצרה על מנת לבחון התאמה לאחר שלב זה.</p>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="carousel-slide">
+            <div class="step-circle-mobile">
+              <div class="step-number-mobile">5</div>
+            </div>
+            <h3 class="step-title-mobile">הצעת שכר וחתימת חוזה</h3>
+            <div class="step-details-mobile">
+              <p>עברתם את כל השלבים? איזה כיף! עכשיו מגיעים לחלק המרגש — אם הכל עבר בהצלחה, נתקדם איתכם להצעת שכר, וכשיהיה סיכום — נעבור לחתימה על חוזה. זה השלב שבו הדברים באמת מתחילים לקרות :)</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-arrow next-arrow" onclick="changeSlide(1)">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <polyline points="9 18 15 12 9 6" stroke="currentColor" fill="none" stroke-width="3"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Dots -->
+      <div class="carousel-dots">
+        <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+        <span class="carousel-dot" onclick="goToSlide(1)"></span>
+        <span class="carousel-dot" onclick="goToSlide(2)"></span>
+        <span class="carousel-dot" onclick="goToSlide(3)"></span>
+        <span class="carousel-dot" onclick="goToSlide(4)"></span>
       </div>
     </div>
   </section>
@@ -287,6 +371,56 @@
         answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
       });
     });
+
+    // Mobile Carousel functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    function showSlide(index) {
+      if (index >= slides.length) currentSlide = 0;
+      else if (index < 0) currentSlide = slides.length - 1;
+      else currentSlide = index;
+
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === currentSlide) slide.classList.add('active');
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === currentSlide) dot.classList.add('active');
+      });
+    }
+
+    function changeSlide(direction) {
+      showSlide(currentSlide + direction);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+    }
+
+    // Touch swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const carouselContent = document.querySelector('.carousel-content');
+    
+    if (carouselContent) {
+      carouselContent.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      carouselContent.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        if (touchEndX < touchStartX - 50) changeSlide(1);
+        if (touchEndX > touchStartX + 50) changeSlide(-1);
+      }
+    }
   </script>
 </body>
 </html>
