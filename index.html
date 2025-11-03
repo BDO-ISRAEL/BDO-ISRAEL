@@ -6,6 +6,15 @@
   <title>BDO - Landing Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet"/>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG09F6D1Y3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GG09F6D1Y3');
+  </script>
 </head>
 <body>
 
@@ -304,7 +313,7 @@
   <section class="apply-section">
     <div class="apply-container">
       <h2>מוכן.ה להגיש מעומדות?</h2>
-      <a class="cta-button" href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbdo-career.hunterhrms.com%2F%25D7%259B%25D7%259C-%25D7%2594%25D7%259E%25D7%25A9%25D7%25A8%25D7%2595%25D7%25AA%2F&data=05%7C02%7CNechamaC%40bdo.co.il%7C5fce629a074241a34dd208de1214c791%7C3c054339d6c24bdcb99e4aeb43de91ec%7C0%7C0%7C638968077651682528%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=fZbDV1T6KB0KZFsvJOacvw3xv4w25xt6jPEH4Fwl2%2Fg%3D&reserved=0" target="_blank">
+      <a class="cta-button" href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbdo-career.hunterhrms.com%2F%25D7%259B%25D7%259C-%25D7%2594%25D7%259E%25D7%25A9%25D7%25A8%25D7%2595%25D7%25AA%2F&data=05%7C02%7CNechamaC%40bdo.co.il%7C5fce629a074241a34dd208de1214c791%7C3c054339d6c24bdcb99e4aeb43de91ec%7C0%7C0%7C638968077651682528%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=fZbDV1T6KB0KZFsvJOacvw3xv4w25xt6jPEH4Fwl2%2Fg%3D&reserved=0" target="_blank" id="apply-button">
         <span>לאתר קרירה שלנו  ←</span>
       </a> 
     </div>
@@ -449,6 +458,18 @@
         if (touchEndX < touchStartX - 50) changeSlide(1);
         if (touchEndX > touchStartX + 50) changeSlide(-1);
       }
+    }
+
+    // Google Analytics - Track Apply Button Click
+    const applyButton = document.getElementById('apply-button');
+    if (applyButton) {
+      applyButton.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'Application',
+          'event_label': 'Apply Button Clicked',
+          'value': 1
+        });
+      });
     }
   </script>
 </body>
